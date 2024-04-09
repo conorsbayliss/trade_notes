@@ -14909,18 +14909,19 @@ $$
 s.t. \quad p_0c_0 + \int_0^m p(z)c(z) dz = w\bar{l} + \pi
 $$
 $$
-c(z) \geq 0
+c(z) \geq 0, \forall z
 $$
 <em>(2)</em> $\hat{w}$ and $p_0$ are such that the agricultural firm chooses $\{ \hat{y_0}, \hat{l_0}  \}$ to earn zero profits,
 $$
 \hat{p_0}y_0 - \hat{w}l_0 \leq 0 
 $$
-<em>(3)</em> Given $\hat{\mathcal{P}}$, producers of good $z$ with $x(z)\geq \bar{x}$ choose $\{\hat{p}(z)\}$ to solve
+and note that this holds with equality if $y_0 &gt; 0$.</p>
+<p><em>(3)</em> Given $\hat{\mathcal{P}}$, producers of good $z$ with $x(z)\geq \bar{x}$ choose $\{\hat{p}(z)\}$ to solve
 $$
-\pi(x(z)) = \max_{\{p(z)\}} p(z)c(z) - \frac{\hat{w}c(z)}{x(z)} - wf, 
+\pi(x(z)) = \max_{\{p(z)\}} p(z)c(z) - \frac{\hat{w}c(z)}{x(z)} - \hat{w}f, 
 $$
 $$
-s.t. c(z) = \frac{\alpha\left[\hat{w}\bar{l} + \int_0^{\hat{m}} \pi(z)dz  \right]}{p(z)^{\frac{1}{1-\rho}}\bar{P}^\frac{\rho}{\rho-1}}, \quad \bar{P} = \left[ \int_0^{\hat{m}}p(z)^{\frac{\rho}{\rho-1}} dz \right]^{\frac{\rho-1}{\rho}}
+s.t. \quad c(z) = \frac{\alpha\left[\hat{w}\bar{l} + \int_0^{\hat{m}} \pi(z)dz  \right]}{p(z)^{\frac{1}{1-\rho}}\bar{P}^\frac{\rho}{\rho-1}}, \quad \bar{P} = \left[ \int_0^{\hat{m}}p(z)^{\frac{\rho}{\rho-1}} dz \right]^{\frac{\rho-1}{\rho}}
 $$
 <em>(4)</em> The measure of producing firms is given by
 $$
@@ -15204,6 +15205,77 @@ $$</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h5 id="Equilibrium"><strong>Equilibrium</strong><a class="anchor-link" href="#Equilibrium">&#182;</a></h5>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Given $\{\mu_i,\bar{l}_i,\tau_i   \}_{i=1}^2$ an equilibrium for this world economy consists of</p>
+<ul>
+<li>Measures of firms $\{\hat{m}_i \}_{i=1}^2$</li>
+<li>Consumer allocations $\hat{\mathcal{G}}^i = \{\hat{c}_0^i, \{\hat{c}^i(z)\}_i\}, \forall i$</li>
+<li>Prices $\mathcal{P}^i = \{\hat{p}^i_0,\{\hat{p}^i(z)\}_z,\hat{w}^i,\bar{P}^i          \}, \forall i$</li>
+<li>Production plans $\mathcal{Y}^i = \{\{\hat{y}^i_0,  \hat{l}^i_0\},\{\hat{y}^i(z),  \hat{l}^i(z)\}_z ,   \{\hat{y}^j_i(z),  \hat{l}^j_i(z)\}_z  \},\forall i  $</li>
+<li>Profits $\pi^i = \{\{ \hat{\pi}^i(z) \}_z\}_i, \forall i          $</li>
+<li>Productivity levels $\{\bar{x}^i_d,  \bar{x}^i_e     \}_i, \forall i     $
+such that:</li>
+</ul>
+<p><em>(1)</em> Given $\mathcal{P}^i$, $\pi^i$, consumers in country $i$, $i=1,2$, choose  $\mathcal{G}^i$ to solve:
+$$
+\max_{\mathcal{G}^i} (1-\alpha) \log(c^i_0) + \frac{\alpha}{\rho}\log \int_{\hat{a}^i}^{\hat{b}^i} c^i(z)^{\rho} dz
+$$
+$$
+s.t. \quad \hat{p}^i_0c^i_0 + \int_{\hat{a}^i}^{\hat{b}^i} \hat{p}^i(z)c^i(z) dz = \hat{w}^i\bar{l}^i + \pi^i
+$$
+$$
+c^i(z) \geq 0, \forall z
+$$
+$$
+\hat{m}^i = \hat{b}^i - \hat{a}^i
+$$</p>
+<p><em>(2)</em> $\{\hat{w}^i,\hat{p}^i_0\}$ are such that producers of the agricultural good in country $i$, $i=1,2$ make zero profits
+$$
+\hat{p}^i_0y^i_0 - \hat{w}^il^i_0 \leq 0 
+$$
+and note that this holds with equality if $y^i_0 &gt; 0$.</p>
+<p><em>(3)</em> Given $\mathcal{P}^i$, producers of good $z$ in country $i$, $i=1,2$ with $x(z)\geq \bar{x}^i_d$ choose $\hat{p}^i(z)$ to solve
+$$
+\hat{\pi}^i(x(z))  = \max_{\{p^i(z)\}} p^i(z)c^i(z) - \frac{\hat{w}^ic^i(z)}{x(z)} - \hat{w}^if_d, 
+$$
+$$
+s.t. \quad c^i(z) = \frac{\alpha\left[\hat{w}^i\bar{l}^i + \pi^i  \right]}{p^i(z)^{\frac{1}{1-\rho}}\bar{P^i}^\frac{\rho}{\rho-1}},
+$$
+and producers of good $z$ in country $i$, $i=1,2$ with $x(z)\geq \bar{x}^i_e$ choose $\hat{p}^j_i(z)$ to solve
+$$
+\hat{\pi}^i(x(z))  = \max_{\{p^j_i(z)\}} p^j_i(z)c^j(z) - \frac{\hat{w}^i\tau^i_ic^j(z)}{x(z)} - \hat{w}^if_e, 
+$$
+$$
+s.t. \quad c^j(z) = \frac{\alpha\left[\hat{w}^j\bar{l}^j + \pi^j  \right]}{p^j_i(z)^{\frac{1}{1-\rho}}\bar{P^j}^\frac{\rho}{\rho-1}},
+$$
+and, $\pi_d(\bar{x}^i_d) = \pi_e(\bar{x}^i_e) = 0$.</p>
+<p><em>(4)</em> The measure of firms producing for consumers in country $i$ is given by
+$$
+\hat{m}^i = \mu_i\int_{\bar{x}_d^i}^{\infty} dF(x) + \mu_j\int_{\bar{x}_e^j}^{\infty} dF(x)
+$$</p>
+<p><em>(5)</em> Markets clear
+$$
+\hat{c}_0^i = \hat{y}^i_0, \forall i 
+$$
+$$
+\hat{c}^i(z)  = \hat{y}^i(z), \quad x(z) \geq \bar{x}^i_d, \quad \forall i 
+$$
+$$
+\hat{c}^j_i(z)  = \hat{y}^j_i(z), \quad x(z) \geq \bar{x}^i_e ,\quad \forall i,j 
+$$
+$$
+\hat{l}^i_0 + \mu^i \left[\int_{\bar{x}^i_d}^{\infty} dz +  \int_{\bar{x}^i_e}^{\infty} dz      \right] = \bar{l}^i, \forall i
+$$</p>
 
 </div>
 </div>
